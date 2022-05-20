@@ -1,7 +1,0 @@
-pkgplaceholder
-==============
-
-.. toctree::
-   :maxdepth: 4
-
-   pkgplaceholder
