@@ -48,7 +48,6 @@ Template for modern Python package GitHub repositories.
   ```console
   $ cd docs
   $ make        # build docs for the current version
-  $ make allver # build docs for all supported versions
   ```
 * Run tests with `pytest`
 * Run pre-commit hooks with `pre-commit run --all-files`
