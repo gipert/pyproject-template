@@ -1,33 +1,34 @@
 # pyproject template
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ghuserplaceholder/pkgplaceholder?logo=git)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ghuserplaceholder/pkgplaceholder/pkgplaceholder/main?label=main%20branch&logo=github)](https://github.com/ghuserplaceholder/pkgplaceholder/actions)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ghuserplaceholder/repoplaceholder?logo=git)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ghuserplaceholder/repoplaceholder/pkgplaceholder/main?label=main%20branch&logo=github)](https://github.com/ghuserplaceholder/repoplaceholder/actions)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Codecov](https://img.shields.io/codecov/c/github/ghuserplaceholder/pkgplaceholder?logo=codecov)](https://app.codecov.io/gh/ghuserplaceholder/pkgplaceholder)
-![GitHub issues](https://img.shields.io/github/issues/ghuserplaceholder/pkgplaceholder?logo=github)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/ghuserplaceholder/pkgplaceholder?logo=github)
-![License](https://img.shields.io/github/license/ghuserplaceholder/pkgplaceholder)
-[![Read the Docs](https://img.shields.io/readthedocs/pkgplaceholder?logo=readthedocs)](https://pkgplaceholder.readthedocs.io)
+[![Codecov](https://img.shields.io/codecov/c/github/ghuserplaceholder/repoplaceholder?logo=codecov)](https://app.codecov.io/gh/ghuserplaceholder/repoplaceholder)
+![GitHub issues](https://img.shields.io/github/issues/ghuserplaceholder/repoplaceholder?logo=github)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/ghuserplaceholder/repoplaceholder?logo=github)
+![License](https://img.shields.io/github/license/ghuserplaceholder/repoplaceholder)
+[![Read the Docs](https://img.shields.io/readthedocs/repoplaceholder?logo=readthedocs)](https://repoplaceholder.readthedocs.io)
 
 Template for modern Python package GitHub repositories.
 
 ## Quick configuration
 
 1. Clone the repository locally
-1. Fill in your GitHub user/org name and package name:
+1. Run the interactive configuration script:
    ```console
-   $ mv pyproject-template <your package name>
-   $ mv src/pkgplaceholder src/<your package name>
-   $ sed -i 's|ghuserplaceholder|<your github username>|g' -- $(find . -type f -not -path "./.git/*")
-   $ sed -i 's|pkgplaceholder|<your package name>|g' -- $(find . -type f -not -path "./.git/*")
+   $ ./template-config.sh
    ```
-1. Provide all the required information in `setup.cfg`
-1. Choose a license and save its statement in `LICENSE` (edit `setup.cfg` accordingly)
-1. Activate
+1. Fill in the missing information in `setup.cfg`
+1. Remove any template instruction from this `README` (but keep the footer at the end!)
+1. Choose a license and save its statement in `LICENSE`
+1. Remove the `template-config.sh` file
+1. Create the https://github.com/$ghuser/$gitrepo GitHub repository
+1. Create a new commit with the unstaged changes and git-push to the remote
+1. Activate (you can log in with your GitHub credentials):
     * https://pre-commit.ci
     * https://codecov.io
-    * https://readthedocs.io (activate versions for which you want docs to be build)
+    * https://readthedocs.io
     * GitHub actions (in the repository settings)
 1. [Optional] Get a PyPI token and add it as a repository secret on GitHub
    (name it `PYPI_PASSWORD`) to enable publishing the package.

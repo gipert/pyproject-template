@@ -31,24 +31,12 @@ language = "python"
 # Furo theme
 html_theme = "furo"
 html_theme_options = {
-    "source_repository": "https://github.com/ghuserplaceholder/pkgplaceholder",
+    "source_repository": "https://github.com/ghuserplaceholder/repoplaceholder",
     "source_branch": "main",
     "source_directory": "docs/source",
 }
 html_title = f"{project} {version}"
 
-# list here legend-optics dependencies that are not required for building docs and
-# could be unmet at build time
-autodoc_mock_imports = [
-    "pandas",
-    # 'numpy',
-    "matplotlib",
-    "mplhep",
-    "scipy",
-    "scimath",
-    "pytest",
-    "pint",
-]  # add new packages here
 autodoc_default_options = {"ignore-module-all": True}
 
 # sphinx-napoleon
