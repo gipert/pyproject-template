@@ -17,17 +17,17 @@ echo -n "Remove the .git/ folder (recommended)? [y/n] "; read ans
 if [[ "$ans" == "y" ]]; then
    rm -rf .git
 
-   echo -n "
-Initialize a new Git repository? This will:
+   echo -n "Initialize a new Git repository? This will:
  - run git-init
  - add https://github.com/$ghuser/$gitrepo as remote (origin)
- - create a first commit";
+ - create a first commit
+? [y/n] ";
    read ans
    if [[ "$ans" == "y" ]]; then
       git init
       git remote add origin https://github.com/$ghuser/$gitrepo
-      git add -- . :!"apply.sh"
-      git commit -m "First commit"
+      git add -- . :!"template-config.sh"
+      git commit -m "Import and configure pyproject-template"
    fi
 fi
 

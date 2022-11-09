@@ -17,10 +17,12 @@ Template for modern Python package GitHub repositories.
 1. Clone the repository locally
 1. Run the interactive configuration script:
    ```console
+   $ cd pyproject-template
    $ ./template-config.sh
    ```
+1. Rename the repository folder to your new repository name
 1. Fill in the missing information in `setup.cfg`
-1. Remove any template instruction from this `README` (but keep the footer at the end!)
+1. Remove any template instruction from this `README.md` (but keep the footer at the end!)
 1. Choose a license and save its statement in `LICENSE`
 1. Remove the `template-config.sh` file
 1. Create the https://github.com/$ghuser/$gitrepo GitHub repository

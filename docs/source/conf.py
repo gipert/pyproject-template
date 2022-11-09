@@ -9,7 +9,7 @@ sys.path.insert(0, Path(__file__).parents[2].resolve().as_posix())
 
 project = "pkgplaceholder"
 copyright = "Copyright Holder"
-version = get_distribution("pkgplaceholder").version
+version = get_distribution("repoplaceholder").version
 
 extensions = [
     "sphinx.ext.githubpages",
